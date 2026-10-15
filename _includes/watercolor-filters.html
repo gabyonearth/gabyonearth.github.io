@@ -1,0 +1,15 @@
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Bordes irregulares tipo acuarela -->
+    <filter id="wc" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="16"/>
+      <feGaussianBlur stdDeviation="0.7"/>
+    </filter>
+    <filter id="wc-soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="9" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="8"/>
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+  </defs>
+</svg>

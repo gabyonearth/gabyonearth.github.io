@@ -1,0 +1,77 @@
+<svg class="hero-art" viewBox="0 0 1200 460" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E6D8EC"/>
+      <stop offset=".55" stop-color="#EAF1E2"/>
+      <stop offset="1" stop-color="#F6F3EE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="460" fill="url(#sky)"/>
+
+  <!-- sol -->
+  <g filter="url(#wc)">
+    <circle cx="940" cy="130" r="118" fill="#9A5FA5" opacity=".28"/>
+    <circle cx="940" cy="130" r="74" fill="#9A5FA5" opacity=".75"/>
+    <circle cx="922" cy="116" r="40" fill="#E6CFEA" opacity=".8"/>
+    <circle cx="975" cy="170" r="30" fill="#E0485A" opacity=".16"/>
+  </g>
+
+  <!-- nubes -->
+  <g filter="url(#wc-soft)" fill="#FFFDF6" opacity=".9">
+    <ellipse cx="250" cy="110" rx="90" ry="22"/>
+    <ellipse cx="300" cy="94" rx="62" ry="24"/>
+    <ellipse cx="640" cy="70" rx="80" ry="18"/>
+    <ellipse cx="690" cy="56" rx="50" ry="19"/>
+    <ellipse cx="1080" cy="215" rx="70" ry="15"/>
+  </g>
+
+  <!-- órbita y satélite -->
+  <path d="M40 215 Q 380 10 800 78" fill="none" stroke="#2F6B4A" stroke-width="2" stroke-dasharray="3 9" stroke-linecap="round" opacity=".7"/>
+  <g transform="translate(520 40) rotate(14)" filter="url(#wc-soft)">
+    <rect x="-8" y="-6" width="16" height="12" rx="2" fill="#E0485A"/>
+    <rect x="-34" y="-4" width="24" height="8" fill="#2F6B4A"/>
+    <rect x="10" y="-4" width="24" height="8" fill="#2F6B4A"/>
+    <circle cx="0" cy="-9" r="2.5" fill="#E0485A"/>
+  </g>
+
+  <!-- cordillera de los Andes -->
+  <g filter="url(#wc)">
+    <path d="M0 305 L0 262 L90 235 L150 250 L230 205 L290 240 L380 215 L460 245 L540 190 L610 130 L670 185 L730 165 L800 220 L880 180 L960 205 L1040 140 L1100 190 L1160 175 L1200 200 V305Z" fill="#9C8FBF" opacity=".78"/>
+    <path d="M610 130 L670 185 L730 165 L800 220 L760 300 L650 300 L640 200Z" fill="#6F6499" opacity=".28"/>
+    <path d="M1040 140 L1100 190 L1160 175 L1200 200 L1200 300 L1070 300 L1060 200Z" fill="#6F6499" opacity=".28"/>
+    <path d="M610 130 L582 160 L596 154 L606 168 L620 156 L630 164 L639 160Z" fill="#FFFFFF" opacity=".92"/>
+    <path d="M1040 140 L1012 170 L1026 164 L1036 178 L1050 166 L1060 174 L1069 170Z" fill="#FFFFFF" opacity=".92"/>
+    <path d="M540 190 L512 220 L526 214 L536 228 L550 216 L560 224 L569 220Z" fill="#FFFFFF" opacity=".92"/>
+    <path d="M730 165 L702 195 L716 189 L726 203 L740 191 L750 199 L759 195Z" fill="#FFFFFF" opacity=".92"/>
+    <path d="M880 180 L852 210 L866 204 L876 218 L890 206 L900 214 L909 210Z" fill="#FFFFFF" opacity=".92"/>
+  </g>
+
+  <!-- colinas -->
+  <g filter="url(#wc)">
+    <path d="M0 300 C150 235 300 262 450 292 S750 250 900 285 S1100 262 1200 282 V460 H0Z" fill="#7FB5A0" opacity=".6"/>
+    <path d="M0 350 C200 292 380 332 560 346 S900 302 1200 342 V460 H0Z" fill="#8DB580"/>
+    <path d="M0 412 C220 362 420 402 640 402 S1000 372 1200 402 V460 H0Z" fill="#2F6B4A"/>
+    <path d="M280 440 C400 402 520 420 640 412 L660 428 C540 440 420 446 280 452Z" fill="#2A8C9E" opacity=".75"/>
+  </g>
+
+  <!-- casita y árboles -->
+  <g filter="url(#wc-soft)">
+    <rect x="800" y="372" width="46" height="30" fill="#FCFAF7"/>
+    <path d="M794 374 L823 346 L852 374Z" fill="#E0485A"/>
+    <rect x="816" y="384" width="12" height="18" fill="#17141C"/>
+    <circle cx="120" cy="392" r="26" fill="#1F4A33"/>
+    <circle cx="165" cy="402" r="20" fill="#5E9A5E"/>
+    <circle cx="1060" cy="384" r="24" fill="#1F4A33"/>
+    <circle cx="1100" cy="396" r="18" fill="#E0485A" opacity=".85"/>
+  </g>
+
+  <!-- flores silvestres -->
+  <g filter="url(#wc-soft)">
+    <circle cx="340" cy="428" r="5" fill="#E0485A"/>
+    <circle cx="372" cy="436" r="4" fill="#E0485A"/>
+    <circle cx="720" cy="426" r="5" fill="#7FB5A0"/>
+    <circle cx="752" cy="434" r="4" fill="#E0485A"/>
+    <circle cx="560" cy="440" r="4" fill="#E0485A"/>
+    <circle cx="990" cy="430" r="5" fill="#7FB5A0"/>
+  </g>
+</svg>

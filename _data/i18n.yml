@@ -1,0 +1,68 @@
+es:
+  other_lang: en
+  other_lang_label: English
+  home_url: /
+  site_title: Gaby on Earth
+  tagline: Diario de una geofísica. Viajes, satélites, comida y cosas que voy descubriendo.
+  kicker: Geofísica · Roma · Mundo
+  nav:
+    - { label: Inicio, url: / }
+    - { label: Temas, url: /temas/ }
+    - { label: Prensa, url: /columnas/ }
+    - { label: Sobre mí, url: /sobre-mi/ }
+  latest: Últimas entradas
+  topics: Temas
+  all_topics: Todos
+  read: Leer
+  see_all: Ver todas
+  no_posts: Aún no hay entradas en este tema.
+  only_here: Esta entrada solo está en español.
+  read_other: Leer en inglés
+  columns_title: Columnas, prensa y entrevistas
+  columns_intro: Textos que he escrito, notas donde aparezco y entrevistas que me han hecho. Cada título te lleva a la fuente original.
+  columns_teaser: Escribo columnas de opinión y he participado en prensa y entrevistas.
+  columns_link: Ver todo
+  groups:
+    columna: Columnas de opinión
+    prensa: Prensa y divulgación
+    entrevista: Entrevistas
+  social_title: Sígueme
+  social_text: Fotos del día a día, viajes y ciencia.
+  read_at: en
+  back: Volver
+  footer: Hecho con cariño, tierra y acuarela.
+  months: [ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic]
+en:
+  other_lang: es
+  other_lang_label: Español
+  home_url: /en/
+  site_title: Gaby on Earth
+  tagline: A geophysicist's journal. Travel, satellites, food and things I discover along the way.
+  kicker: Geophysics · Rome · World
+  nav:
+    - { label: Home, url: /en/ }
+    - { label: Topics, url: /en/topics/ }
+    - { label: Press, url: /en/columns/ }
+    - { label: About, url: /en/about/ }
+  latest: Latest posts
+  topics: Topics
+  all_topics: All
+  read: Read
+  see_all: See all
+  no_posts: No posts in this topic yet.
+  only_here: This post is only available in English.
+  read_other: Read in Spanish
+  columns_title: Columns, press & interviews
+  columns_intro: Pieces I have written, news where I appear and interviews I have given (mostly in Spanish). Each title links to the original source.
+  columns_teaser: I write opinion columns and have taken part in press and interviews.
+  columns_link: See all
+  groups:
+    columna: Opinion columns
+    prensa: Press & outreach
+    entrevista: Interviews
+  social_title: Follow along
+  social_text: Everyday photos, travels and science.
+  read_at: in
+  back: Back
+  footer: Made with care, earth and watercolor.
+  months: [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]

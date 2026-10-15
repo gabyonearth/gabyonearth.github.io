@@ -1,0 +1,24 @@
+{% assign lang = page.lang | default: 'es' %}
+{% assign t = site.data.i18n[lang] %}
+{% assign other = t.other_lang %}
+{% assign switch_url = site.data.i18n[other].home_url %}
+{% if page.alt_url %}
+  {% assign switch_url = page.alt_url %}
+{% elsif page.ref %}
+  {% assign alt = site.posts | where: "ref", page.ref | where: "lang", other | first %}
+  {% if alt %}{% assign switch_url = alt.url %}{% endif %}
+{% endif %}
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="{{ t.home_url | relative_url }}">
+      {% include geoid.svg %}
+      <span class="brand-name">{{ t.site_title }}</span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      {% for item in t.nav %}
+        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+      {% endfor %}
+      <a class="lang-switch" href="{{ switch_url | relative_url }}" hreflang="{{ other }}" lang="{{ other }}">{{ t.other_lang_label }}</a>
+    </nav>
+  </div>
+</header>

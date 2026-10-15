@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="s" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E6D8EC"/>
+      <stop offset=".6" stop-color="#EAF1E2"/>
+      <stop offset="1" stop-color="#F6F3EE"/>
+    </linearGradient>
+    <filter id="w" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="14"/>
+      <feGaussianBlur stdDeviation="0.8"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#s)"/>
+  <g filter="url(#w)">
+    <circle cx="560" cy="150" r="90" fill="#9A5FA5" opacity=".3"/>
+    <circle cx="560" cy="150" r="54" fill="#9A5FA5" opacity=".8"/>
+    <circle cx="585" cy="180" r="22" fill="#E0485A" opacity=".16"/>
+    <path d="M0 330 L0 292 L90 252 L150 278 L260 200 L330 258 L420 222 L520 172 L600 245 L680 214 L760 256 L800 240 V330Z" fill="#9C8FBF" opacity=".78"/>
+    <path d="M520 172 L492 202 L506 196 L516 210 L530 198 L540 206 L549 202Z" fill="#FFFFFF" opacity=".92"/>
+    <path d="M260 200 L232 230 L246 224 L256 238 L270 226 L280 234 L289 230Z" fill="#FFFFFF" opacity=".92"/>
+    <path d="M680 214 L652 244 L666 238 L676 252 L690 240 L700 248 L709 244Z" fill="#FFFFFF" opacity=".92"/>
+    <path d="M0 320 C130 260 260 290 400 316 S650 280 800 310 V500 H0Z" fill="#7FB5A0" opacity=".65"/>
+    <path d="M0 380 C170 332 320 370 470 380 S680 346 800 372 V500 H0Z" fill="#8DB580"/>
+    <path d="M0 440 C180 400 340 436 520 436 S700 410 800 430 V500 H0Z" fill="#2F6B4A"/>
+    <circle cx="90" cy="420" r="22" fill="#1F4A33"/>
+    <circle cx="125" cy="430" r="15" fill="#9A5FA5" opacity=".8"/>
+  </g>
+</svg>

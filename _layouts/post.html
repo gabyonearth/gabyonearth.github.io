@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: 'es' %}
+{% assign t = site.data.i18n[lang] %}
+{% assign cat = site.data.categories[page.category] %}
+{% assign other = t.other_lang %}
+{% assign alt = site.posts | where: "ref", page.ref | where: "lang", other | first %}
+
+<article class="post" style="--c: {{ cat.color | default: '#C4673F' }}">
+  <header class="post-head">
+    <a class="back" href="{{ t.nav[1].url | relative_url }}{% if cat %}#{{ page.category }}{% endif %}">← {{ t.back }}</a>
+    <div class="meta">
+      {% if cat %}<span class="chip">{{ cat[lang] }}</span>{% endif %}
+      <span class="date">{% include date.html d=page.date lang=lang %}</span>
+      {% if page.location %}<span class="place">· {{ page.location }}</span>{% endif %}
+    </div>
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  {% if page.image %}<img class="post-cover" src="{{ page.image | relative_url }}" alt="">{% endif %}
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  <footer class="post-foot">
+    {% if alt %}
+      <a class="btn" href="{{ alt.url | relative_url }}" hreflang="{{ other }}">{{ t.read_other }} →</a>
+    {% else %}
+      <p class="hand">{{ t.only_here }}</p>
+    {% endif %}
+  </footer>
+</article>

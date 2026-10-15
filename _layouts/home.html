@@ -1,0 +1,49 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: 'es' %}
+{% assign t = site.data.i18n[lang] %}
+{% assign posts = site.posts | where: "lang", lang %}
+
+<section class="hero">
+  {% include hero.svg %}
+  <div class="hero-text">
+    <p class="kicker hand">{{ t.kicker }}</p>
+    <h1>{{ t.site_title }}</h1>
+    <p class="lead">{{ t.tagline }}</p>
+  </div>
+</section>
+
+<section class="topics-strip" aria-label="{{ t.topics }}">
+  {% for c in site.data.categories %}
+    <a class="chip" style="--c: {{ c[1].color }}" href="{{ t.nav[1].url | relative_url }}#{{ c[0] }}">{{ c[1][lang] }}</a>
+  {% endfor %}
+</section>
+
+<section>
+  <h2 class="section-title">{{ t.latest }}</h2>
+  {% if posts.size > 0 %}
+    <div class="grid">
+      {% for post in posts limit: 6 %}{% include post-card.html post=post %}{% endfor %}
+    </div>
+    {% if posts.size > 6 %}<p class="center"><a class="btn" href="{{ t.nav[1].url | relative_url }}">{{ t.see_all }}</a></p>{% endif %}
+  {% else %}
+    <p class="empty">{{ t.no_posts }}</p>
+  {% endif %}
+</section>
+
+<section class="social-band">
+  <div>
+    <h2 class="section-title">{{ t.social_title }}</h2>
+    <p>{{ t.social_text }}</p>
+  </div>
+  {% include social.html %}
+</section>
+
+<section class="teaser">
+  <div>
+    <h2 class="section-title">{{ t.columns_title }}</h2>
+    <p>{{ t.columns_teaser }}</p>
+  </div>
+  <a class="btn" href="{{ t.nav[2].url | relative_url }}">{{ t.columns_link }}</a>
+</section>

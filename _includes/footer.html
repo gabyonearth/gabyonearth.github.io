@@ -1,0 +1,14 @@
+{% assign t = site.data.i18n[page.lang | default: 'es'] %}
+<footer class="site-footer">
+  <svg class="footer-hills" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+    <g filter="url(#wc-soft)">
+      <path d="M0 70 C200 20 380 80 600 60 S960 20 1200 60 V120 H0Z" fill="#7FB5A0" opacity=".55"/>
+      <path d="M0 95 C240 55 420 105 640 90 S980 60 1200 90 V120 H0Z" fill="#8DB580"/>
+    </g>
+  </svg>
+  <div class="footer-body">
+    {% include social.html compact=true %}
+    <p class="hand">{{ t.footer }}</p>
+    <p class="small">© {{ 'now' | date: '%Y' }} {{ site.title }} · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+  </div>
+</footer>

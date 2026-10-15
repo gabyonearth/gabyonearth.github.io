@@ -1,0 +1,29 @@
+# Temas del blog. La clave (viajes, ciencia...) es lo que pones en `category:` de cada post.
+viajes:
+  es: Viajes
+  en: Travel
+  color: "#2A8C9E"
+ciencia:
+  es: Ciencia y satélites
+  en: Science & satellites
+  color: "#9A5FA5"
+phd:
+  es: PhD en Roma
+  en: PhD in Rome
+  color: "#2F6B4A"
+comida:
+  es: Comida
+  en: Food
+  color: "#E0485A"
+mujeres:
+  es: Mujeres en ciencia
+  en: Women in science
+  color: "#6F3D7F"
+reflexiones:
+  es: Reflexiones
+  en: Reflections
+  color: "#1F6A78"
+entrevistas:
+  es: Entrevistas
+  en: Interviews
+  color: "#6E9B3A"

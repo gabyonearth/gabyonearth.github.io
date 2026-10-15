@@ -1,0 +1,32 @@
+title: Gaby on Earth
+description: Diario de una geofísica — viajes, satélites, comida y cosas que voy descubriendo.
+# Cuando crees tu cuenta, cambia "gabyonearth" por tu usuario real de GitHub.
+url: "https://gabyonearth.github.io"
+baseurl: ""
+timezone: Europe/Rome
+markdown: kramdown
+permalink: /blog/:year/:month/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+defaults:
+  - scope: { path: "" }
+    values: { lang: es }
+  - scope: { path: "en" }
+    values: { lang: en }
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .gitignore
+
+# Redes sociales (cambia el Instagram cuando crees uno nuevo para el blog).
+social:
+  instagram: "https://www.instagram.com/gaby_hm/"
+  linkedin: "https://www.linkedin.com/in/gabriela-herrera-malig-052932198/"

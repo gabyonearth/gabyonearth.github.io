@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% assign lang = page.lang | default: 'es' %}
+{% assign t = site.data.i18n[lang] %}
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.layout != 'home' %}{{ page.title }} · {% endif %}{{ t.site_title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: t.tagline | strip_html | strip_newlines | truncate: 160 }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="alternate" type="application/atom+xml" href="{{ '/feed.xml' | relative_url }}" title="{{ site.title }}">
+</head>
+<body>
+  {% include watercolor-filters.html %}
+  {% include header.html %}
+  <main class="wrap">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script>
+    // Respeta "reducir movimiento": detiene al satélite del logo
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('svg.geoid').forEach(function (s) { s.pauseAnimations(); });
+    }
+  </script>
+</body>
+</html>

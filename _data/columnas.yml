@@ -1,0 +1,70 @@
+# Columnas, prensa y entrevistas. La más nueva arriba dentro de cada tipo.
+# tipo: columna | prensa | entrevista
+# Campos: title, medio, date (AAAA-MM-DD) o when (texto libre), url (opcional), nota / nota_en (opcional)
+
+# ---------- Columnas de opinión ----------
+- tipo: columna
+  title: "Mis columnas de opinión en Cooperativa"
+  medio: "Cooperativa"
+  url: "https://opinion.cooperativa.cl/opinion/gabriela-herrera-malig/2024-09-30/090244.html"
+  nota: "Perfil con todas mis columnas."
+  nota_en: "Author page with all my columns."
+- tipo: columna
+  title: "Angol, los terremotos y la memoria: 76 años contra el olvido"
+  medio: "Programa Riesgo Sísmico (PRS), Universidad de Chile"
+  date: 2025-04-30
+  url: "https://prs.uchile.cl/angol-los-terremotos-y-la-memoria-76-anos-contra-el-olvido/"
+
+# ---------- Prensa y divulgación ----------
+- tipo: prensa
+  title: "Lecciones 40 años después de tres megadesastres socionaturales en América Latina"
+  medio: "Instituto de Estudios Urbanos, Universidad Nacional de Colombia"
+  date: 2025-08-20
+  url: "https://ieu.unal.edu.co/divulgacion-academica/lecciones-40-anos-despues-de-tres-megadesastres-socionaturales-en-america-latina/"
+  nota: "Divulgación de un programa de Radio UNAL en el que participé."
+  nota_en: "Outreach piece about a Radio UNAL program I took part in."
+- tipo: prensa
+  title: "Investigadora PRS fue la única mujer latinoamericana en participar en importante curso en Alemania"
+  medio: "Programa Riesgo Sísmico (PRS), Universidad de Chile"
+  date: 2025-01-23
+  url: "https://prs.uchile.cl/investigadora-prs-fue-la-unica-mujer-latinoamericana-en-participar-en-importante-curso-en-alemania/"
+  nota: "Curso internacional de sismología en el GFZ de Potsdam."
+  nota_en: "International seismology training course at GFZ Potsdam."
+- tipo: prensa
+  title: "Investigadora Gabriela Herrera expone en Laboratorio GEOAZUR sobre Observación GNSS"
+  medio: "Programa Riesgo Sísmico (PRS), Universidad de Chile"
+  url: "https://prs.uchile.cl/investigadora-gabriela-herrera-expone-en-laboratorio-geoazur-sobre-observacion-gnss/"
+- tipo: prensa
+  title: "Camino a la COP28"
+  medio: "CEUS Chile (documento PDF)"
+  when: "Agosto 2023"
+  when_en: "August 2023"
+  url: "https://www.ceuschile.cl/wp-content/uploads/2023/08/CEUS_Camino_a_la_COP28-1.pdf"
+- tipo: prensa
+  title: "Acción climática desde la Casa de Bello: Egresada lideró participación juvenil de Chile en la COP27"
+  medio: "Universidad de Chile"
+  date: 2022-11-25
+  url: "https://uchile.cl/noticias/193213/egresada-u-de-chile-lidero-participacion-juvenil-de-chile-en-la-cop27"
+- tipo: prensa
+  title: "Latin America at COP 27"
+  medio: "Friedrich-Ebert-Stiftung"
+  date: 2022-11-01
+  url: "https://www.fes.de/en/news/latin-america-at-cop-27"
+
+# ---------- Entrevistas ----------
+- tipo: entrevista
+  title: "Continental Drift, con DJ Aivnn"
+  medio: "KTUH 90.1 FM, Honolulu"
+  when: "Julio 2026"
+  when_en: "July 2026"
+  url: "https://drive.google.com/file/d/1Iu5YjXS3nKUrKJQGOFDZnOvM1vfmR8ve/view?usp=sharing"
+  nota: "Programa de radio de música global de la radio de la Universidad de Hawái en Manoa. Lo grabamos el 23 de julio."
+  nota_en: "Global-music radio show on the University of Hawaiʻi at Mānoa's station. We recorded it on July 23."
+- tipo: entrevista
+  title: "Crisis climática, incendios y el día del sobregiro ecológico de Chile"
+  medio: "Radio.f5"
+  date: 2023-09-08
+- tipo: entrevista
+  title: "Mi participación en la conferencia SB58 (programa Café Plus)"
+  medio: "TXS Plus"
+  date: 2023-06-20

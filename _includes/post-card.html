@@ -1,0 +1,15 @@
+{% assign p = include.post %}
+{% assign plang = p.lang | default: 'es' %}
+{% assign cat = site.data.categories[p.category] %}
+<article class="card" data-cat="{{ p.category }}" style="--c: {{ cat.color | default: '#C4673F' }}">
+  <a class="card-img" href="{{ p.url | relative_url }}" tabindex="-1" aria-hidden="true"
+     style="background-image: url('{{ p.image | default: '/assets/img/cover-default.svg' | relative_url }}')"></a>
+  <div class="card-body">
+    <div class="meta">
+      {% if cat %}<span class="chip">{{ cat[plang] }}</span>{% endif %}
+      <span class="date">{% include date.html d=p.date lang=plang %}</span>
+    </div>
+    <h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+    <p>{{ p.excerpt | strip_html | truncate: 140 }}</p>
+  </div>
+</article>

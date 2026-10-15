@@ -1,0 +1,47 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: 'es' %}
+{% assign t = site.data.i18n[lang] %}
+{% assign posts = site.posts | where: "lang", lang %}
+
+<header class="post-head">
+  <h1>{{ page.title }}</h1>
+</header>
+
+<div class="topics-strip" id="filters">
+  <button class="chip is-on" style="--c: #3B2F2A" data-filter="all">{{ t.all_topics }}</button>
+  {% for c in site.data.categories %}
+    <button class="chip" style="--c: {{ c[1].color }}" data-filter="{{ c[0] }}">{{ c[1][lang] }}</button>
+  {% endfor %}
+</div>
+
+<div class="grid" id="posts">
+  {% for post in posts %}{% include post-card.html post=post %}{% endfor %}
+</div>
+<p class="empty" id="empty" hidden>{{ t.no_posts }}</p>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('#filters [data-filter]');
+    var cards = document.querySelectorAll('#posts .card');
+    var empty = document.getElementById('empty');
+    function apply(f) {
+      var shown = 0;
+      cards.forEach(function (c) {
+        var ok = f === 'all' || c.dataset.cat === f;
+        c.hidden = !ok;
+        if (ok) shown++;
+      });
+      buttons.forEach(function (b) { b.classList.toggle('is-on', b.dataset.filter === f); });
+      empty.hidden = shown > 0;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        history.replaceState(null, '', b.dataset.filter === 'all' ? location.pathname : '#' + b.dataset.filter);
+        apply(b.dataset.filter);
+      });
+    });
+    apply(location.hash.slice(1) || 'all');
+  })();
+</script>

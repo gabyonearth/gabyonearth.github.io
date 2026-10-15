@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: 'es' %}
+{% assign t = site.data.i18n[lang] %}
+
+<header class="post-head">
+  <h1>{{ page.title }}</h1>
+  <p class="lead">{{ t.columns_intro }}</p>
+</header>
+
+{% assign tipos = "columna,prensa,entrevista" | split: "," %}
+{% for tipo in tipos %}
+  {% assign items = site.data.columnas | where: "tipo", tipo %}
+  {% if items.size > 0 %}
+    <h2 class="section-title">{{ t.groups[tipo] }}</h2>
+    <ul class="columns-list">
+      {% for c in items %}
+        <li>
+          <span class="date">
+            {%- if c.date %}{% include date.html d=c.date lang=lang %}
+            {%- elsif lang == 'en' and c.when_en %}{{ c.when_en }}
+            {%- elsif c.when %}{{ c.when }}{% endif -%}
+          </span>
+          {% if c.url %}<a href="{{ c.url }}" target="_blank" rel="noopener">{{ c.title }}</a>{% else %}<span class="title-plain">{{ c.title }}</span>{% endif %}
+          <span class="medio">{{ c.medio }}</span>
+          {% assign nota = c.nota %}{% if lang == 'en' and c.nota_en %}{% assign nota = c.nota_en %}{% endif %}
+          {% if nota %}<span class="nota">{{ nota }}</span>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}
