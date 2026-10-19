@@ -4,7 +4,7 @@ date: 2026-10-15
 lang: es
 ref: bienvenida
 category: reflexiones
-location: Roma
+location: Santiago, Chile
 excerpt: "Por qué empecé este blog y qué voy a contar aquí"
 ---
 
