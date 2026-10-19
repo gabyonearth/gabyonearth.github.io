@@ -14,7 +14,7 @@ I'll write about **travel**, **science and satellites**, my **PhD in Rome**, **f
 
 I want it to feel like writing my stories and thoughts in a travel notebook.
 
-{% include figure.html src="/assets/img/primer-post/foto-1.jpg" alt="Gaby smiling in a red jacket next to a white staircase" %}
+{% include figure.html src="/assets/img/primer-post/foto-1.jpg" alt="Gaby smiling in a red jacket next to a white staircase" caption="Photo taken at the Faculty of Physical and Mathematical Sciences of the Universidad de Chile." %}
 
 > This is just the beginning.
 
