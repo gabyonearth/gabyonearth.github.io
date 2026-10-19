@@ -12,7 +12,7 @@ Empiezo este blog con una idea sencilla: tener un lugar donde dejar rastro de lo
 
 Voy a escribir sobre **viajes**, **ciencia y satélites**, mi **doctorado en Roma**, **comida**, ser **mujer en ciencias** y reflexiones personales. Quizás entreviste a gente que conozca en el camino, y de vez en cuando enlazaré columnas de opinión que publico en medios de Chile.
 
-Quise alejarme un poco del espacio de las RRSS, no tener la presión ni vivir algo muy vertiginoso. Sino que tener el tiempo de reflexionar y medir lo que quiero o no compartir públicamente. Que se sienta como anotar mis historias y pensamientos en una libreta de viaje.
+Quiero que se sienta como anotar mis historias y pensamientos en una libreta de viaje.
 
 {% include figure.html src="/assets/img/cover-default.svg" caption="Así se ve una foto con pie. Reemplázala por la tuya." %}
 
