@@ -14,7 +14,7 @@ Voy a escribir sobre **viajes**, **ciencia y satélites**, mi **doctorado en Rom
 
 Quiero que se sienta como anotar mis historias y pensamientos en una libreta de viaje.
 
-{% include figure.html src="/assets/img/cover-default.svg" caption="Así se ve una foto con pie. Reemplázala por la tuya." %}
+{% include figure.html src="/assets/img/primer-post/foto-1.jpg" alt="Gaby sonriendo, con chaqueta roja, junto a una escalera blanca" %}
 
 > Esto recién comienza.
 

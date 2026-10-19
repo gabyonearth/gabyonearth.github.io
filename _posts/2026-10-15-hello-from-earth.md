@@ -4,7 +4,7 @@ date: 2026-10-15
 lang: en
 ref: bienvenida
 category: reflexiones
-location: Rome
+location: Santiago, Chile
 excerpt: "Why I started this blog and what I'll write about here"
 ---
 
@@ -14,7 +14,7 @@ I'll write about **travel**, **science and satellites**, my **PhD in Rome**, **f
 
 I want it to feel like writing my stories and thoughts in a travel notebook.
 
-{% include figure.html src="/assets/img/cover-default.svg" caption="This is how a photo with a caption looks. Replace it with yours." %}
+{% include figure.html src="/assets/img/primer-post/foto-1.jpg" alt="Gaby smiling in a red jacket next to a white staircase" %}
 
 > This is just the beginning.
 
