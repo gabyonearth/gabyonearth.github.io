@@ -97,7 +97,9 @@ button.chip.is-on { background: var(--c); color: #fff; border-color: var(--c); }
 /* ---------- secciones ---------- */
 .section-title {
   margin-top: 44px;
-  text-decoration: underline wavy var(--lila-soft); text-decoration-thickness: 2px; text-underline-offset: 8px;
+  display: inline-block; padding: 0 .2em; margin-left: -.2em; border-radius: 4px 12px 6px 14px;
+  /* subrayado tipo marcador de acuarela, en vez de línea ondulada */
+  background: linear-gradient(to top, color-mix(in srgb, var(--hl, var(--lila-soft)) 45%, transparent) 0 .45em, transparent .45em);
 }
 .empty { color: var(--ink-soft); font-style: italic; }
 
@@ -208,4 +210,6 @@ button.chip.is-on { background: var(--c); color: #fff; border-color: var(--c); }
   background: linear-gradient(120deg, rgba(42, 140, 158, .22), rgba(224, 72, 90, .16));
   border-radius: 20px 28px 18px 30px; border: 1px dashed rgba(42, 140, 158, .6);
 }
-.social-band .section-title { text-decoration-color: var(--rosa); }
+.social-band .section-title { --hl: var(--teal); }
+.teaser .section-title { --hl: var(--moss); }
+.heart { color: var(--rosa); }

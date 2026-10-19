@@ -14,6 +14,6 @@ Este blog es algo así como mi cuaderno de viaje durante mi periodo de phd: un l
 
 Pretendo compartir reflexiones de lo que vivo y aprendo.
 
-## Bienvenidos quienes quieran leerme <3
+## Bienvenidos quienes quieran leerme <span class="heart">♥</span>
 
 {% include social.html %}

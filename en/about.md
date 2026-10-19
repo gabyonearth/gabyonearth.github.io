@@ -14,6 +14,6 @@ This blog is something like my travel journal during my PhD: a place to keep pho
 
 I intend to share reflections on what I live and learn.
 
-## Welcome, to everyone who wants to read me <3
+## Welcome, to everyone who wants to read me <span class="heart">♥</span>
 
 {% include social.html %}
