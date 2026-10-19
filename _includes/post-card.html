@@ -3,7 +3,7 @@
 {% assign cat = site.data.categories[p.category] %}
 <article class="card" data-cat="{{ p.category }}" style="--c: {{ cat.color | default: '#C4673F' }}">
   <a class="card-img" href="{{ p.url | relative_url }}" tabindex="-1" aria-hidden="true"
-     style="background-image: url('{{ p.image | default: '/assets/img/cover-default.svg' | relative_url }}')"></a>
+     style="background-image: url('{{ p.thumb | default: p.image | default: '/assets/img/cover-default.svg' | relative_url }}')"></a>
   <div class="card-body">
     <div class="meta">
       {% if cat %}<span class="chip">{{ cat[plang] }}</span>{% endif %}

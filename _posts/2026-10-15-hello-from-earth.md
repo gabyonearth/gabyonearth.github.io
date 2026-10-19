@@ -4,6 +4,7 @@ date: 2026-10-15
 lang: en
 ref: bienvenida
 category: reflexiones
+thumb: /assets/img/primer-post/foto-1.jpg
 location: Santiago, Chile
 excerpt: "Why I started this blog and what I'll write about here"
 ---
